@@ -1,0 +1,13 @@
+create database customerdb;
+use customerdb;
+-- 1. Create the customer table
+CREATE TABLE customer (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT NOT NULL
+);
+
+-- 2. Insert sample data
+INSERT INTO customer (name, age) VALUES ('Alice', 30);
+INSERT INTO customer (name, age) VALUES ('Bob', 25);
+INSERT INTO customer (name, age) VALUES ('Charlie', 40);
